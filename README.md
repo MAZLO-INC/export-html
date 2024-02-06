@@ -125,3 +125,11 @@ An optional `SENTRY_DSN` environment variable can be configured to enable [Sentr
 ## Credits
 
 This service is based on the excellent [Puppeteer module](https://github.com/GoogleChrome/puppeteer) and is maintained by Kaare Larsen.
+
+
+# Mazlo Build
+
+```
+docker build -t us-central1-docker.pkg.dev/mazlo-dev-app/mazlo/export-html:$(git rev-parse) .
+docker push us-central1-docker.pkg.dev/mazlo-dev-app/mazlo/export-html:$(git rev-parse)
+```
